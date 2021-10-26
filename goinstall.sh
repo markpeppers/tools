@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-VERSION="1.14"
+VERSION="1.17"
 
 if [ -n "$DIRENV_DIR" ]; then
     DIRENV_DIR="${DIRENV_DIR#?}"
