@@ -33,6 +33,9 @@ echo "Starting bootstrapping"
 # Set working dir to script dir
 WORKING_DIR="${0%/*}"
 
+# Enable key-repeat in JS applications such as VSCode and codepen.io
+defaults write -g ApplePressAndHoldEnabled -bool false
+
 # Check for Homebrew, install if we don't have it
 if test ! $(which brew); then
     echo "Installing homebrew..."
